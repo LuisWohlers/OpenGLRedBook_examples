@@ -16,6 +16,7 @@
 #include "vmath.h"
 
 #include <stdio.h>
+#include <time.h>
 
 enum
 {
@@ -111,7 +112,7 @@ void ComputeParticleSimulator::Initialize(const char * title)
 
     static const char compute_shader_source[] =
         STRINGIZE(
-#version 430 core\n
+//#version 430 core\n
 
 layout (std140, binding = 0) uniform attractor_block
 {
